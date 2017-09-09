@@ -3,7 +3,7 @@ define( "ROOT" , __DIR__ );
 require_once (ROOT. "/includes/Main.class.php");
 require_once (ROOT. "/includes/config.php");
 include(ROOT. "/themes/user/playheader.php");
-$connection = mysqli_connect("localhost", "root", "");
+$connection = mysqli_connect("173.208.189.34", "adityaw1_wp197", "Putuaditya97");
 // Seleksi Database
 $db = mysqli_select_db($connection, "adityaw1_wp197");
 	if(!isset($_SESSION)){
@@ -45,7 +45,7 @@ if($id == $gpemain["id"]) {
 		 <div class="form-group">
          <label><?php echo $penjelasan; ?></label>
 		 </div>
-        <a class="btn btn-primary" href="/ww/play.php?id=<?php echo $gpemain["idroom"]; ?>">Kembali</a>
+        <a class="btn btn-primary" href="/play.php?id=<?php echo $gpemain["idroom"]; ?>">Kembali</a>
  	   </form>
 	   </div>
 	</div>
