@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
 		$username = $_POST['username'];
 		$password = $_POST["password"];
 		// Membangun koneksi ke database
-		$connection = mysqli_connect("localhost", "root", "");
+		$connection = mysqli_connect("173.208.189.34", "adityaw1_wp197", "Putuaditya97");
 		// Mencegah MySQL injection 
 		// Seleksi Database
 		$db = mysqli_select_db($connection, "adityaw1_wp197");
@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
 				$_SESSION['login']=$username; // Membuat Sesi/session
 				header("location: login.php"); // Mengarahkan ke halaman profil
 				} 
-			return Main::redirect(array("danger",e("Email atau Password salah")),"/ww/login.php");
+			return Main::redirect(array("danger",e("Email atau Password salah")),"/login.php");
 		}
 }
 break;
@@ -53,15 +53,15 @@ break;
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />  
     <meta name="description" content="Play werewolf online" />
 	<!-- Bootstrap core CSS -->
-    <link href="/ww/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
     <!-- Component CSS -->
-    <link rel="stylesheet" type="text/css" href="/ww/themes/style.css">
-    <link rel="stylesheet" type="text/css" href="/ww/static/css/components.min.css">
+    <link rel="stylesheet" type="text/css" href="/themes/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/components.min.css">
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js?v=2.0.3"></script>
-    <script type="text/javascript" src="/ww/static/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/ww/static/js/zclip.js"></script>
-    <script type="text/javascript" src="/ww/static/application.fn.js?v=1.0"></script>
-    <script type="text/javascript" src="/ww/static/application.js?v=1.0"></script>  
+    <script type="text/javascript" src="/static/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/js/zclip.js"></script>
+    <script type="text/javascript" src="/static/application.fn.js?v=1.0"></script>
+    <script type="text/javascript" src="/static/application.js?v=1.0"></script>  
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -73,10 +73,10 @@ break;
 	<div class="container">    
 		<div class="centered form">      
       <div class="site_logo">
-          <a href="/ww"><img src="/ww/content/auto_site_logo.png" alt="Aditya Website"></a>
+          <a href="/ww"><img src="/content/auto_site_logo.png" alt="Aditya Website"></a>
 	  </div>
 	  <?php echo Main::message() ?>
-      <form role="form" class="live_form form" id="login_form" method="post" action="/ww/login.php">        
+      <form role="form" class="live_form form" id="login_form" method="post" action="/login.php">        
         <div class="form-group">
           <label for="email">Email or Username
           </label>
