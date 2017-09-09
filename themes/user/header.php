@@ -8,16 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />  
     <meta name="description" content="Play werewolf online" />
 	<!-- Bootstrap core CSS -->
-    <link href="/ww/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
     <!-- Component CSS -->
-    <link rel="stylesheet" type="text/css" href="/ww/themes/style.css">
-    <link rel="stylesheet" type="text/css" href="/ww/static/css/components.min.css">
+    <link rel="stylesheet" type="text/css" href="/themes/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/components.min.css">
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js?v=2.0.3"></script>
-    <script type="text/javascript" src="/ww/static/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/ww/static/js/zclip.js"></script>
-    <script type="text/javascript" src="/ww/static/application.fn.js?v=1.0"></script>
-    <script type="text/javascript" src="/ww/static/application.js?v=1.0"></script>  
-	<link rel="shortcut icon" href="/ww/content/Favicon.png">
+    <script type="text/javascript" src="/static/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/js/zclip.js"></script>
+    <script type="text/javascript" src="/static/application.fn.js?v=1.0"></script>
+    <script type="text/javascript" src="/static/application.js?v=1.0"></script>  
+	<link rel="shortcut icon" href="/content/Favicon.png">
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -32,8 +32,8 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                   <span class="glyphicon glyphicon-align-justify"></span>
                 </button>
-                <a class="navbar-brand" href="/ww/">
-                  <img src="/ww/content/auto_site_logo.png" alt="Aditya Website">
+                <a class="navbar-brand" href="/">
+                  <img src="/content/auto_site_logo.png" alt="Aditya Website">
                 </a>
               </div>
               <div class="navbar-collapse collapse">
