@@ -13,7 +13,7 @@ switch ($action) {
 	case "reset" :
 	include(ROOT. "/themes/user/loginheader.php");
 	if(!isset($_SESSION["masuk"])) {
-		return Main::redirect(array("success",e("Anda telah keluar")),"/ww/index.php");
+		return Main::redirect(array("success",e("Anda telah keluar")),"/index.php");
 	}
 	if(isset($_POST["yakin"])){
 		$nama = $_SESSION["masuk"];
@@ -21,12 +21,12 @@ switch ($action) {
 		unset($_SESSION["masuk"]);
 		unset($_SESSION["karakter"]);
 		unset($_SESSION["idroom"]);
-		return Main::redirect(array("success",e("Anda telah keluar")),"/ww/index.php");
+		return Main::redirect(array("success",e("Anda telah keluar")),"/index.php");
 	}
 	?>
 	<section>
 	<div class="centered form">
-	  	<form role="form" class="live_form form" id="login_form" method="post" action="/ww/index.php?action=reset">
+	  	<form role="form" class="live_form form" id="login_form" method="post" action="/index.php?action=reset">
 		<div class="form-group">
 		<h2>Apakah anda yakin? Data anda (Nama dan Karakter) akan direset pada room.</h2>
 		</div>
@@ -46,7 +46,7 @@ switch ($action) {
 	}
 	if(isset($_SESSION["idroom"])){
 		$idroom = $_SESSION["idroom"]; 
-		return Main::redirect("","/ww/play.php?id=".$idroom."");
+		return Main::redirect("","/play.php?id=".$idroom."");
 	}
 	include(ROOT."/themes/header.php"); 
 	if(isset($_POST['submitnama'])) {
