@@ -2,7 +2,7 @@
 define( "ROOT" , __DIR__ );
 require_once (ROOT. "/includes/Main.class.php");
 require_once (ROOT. "/includes/config.php");
-$connection = mysqli_connect("localhost", "root", "");
+$connection = mysqli_connect("173.208.189.34", "adityaw1_wp197", "Putuaditya97");
 // Seleksi Database
 $db = mysqli_select_db($connection, "adityaw1_wp197");
 	if(!isset($_SESSION)){
@@ -80,4 +80,4 @@ switch ($action) {
 		break;
 }
 ?>
-  <?php include(ROOT. "/themes/footer.php"); ?>
+<?php include(ROOT. "/themes/footer.php"); ?>
